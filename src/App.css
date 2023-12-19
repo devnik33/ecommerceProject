@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+img {
+  max-width: 100%;
+}
+
+.dummy {
+  background-color: red;
+}
+
+.restaurant-card {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 16px;
+}
+
+.shimmer-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 16px;
+  background-color: lightgray;
+}
+
+.restaurant-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.restaurant-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.restaurant-card img {
+  width: 90%;
+  margin: 10px;
+  height: 50%;
+}
+
+.footer {
+  border: 1px solid black;
+}
+@layer utilities {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
